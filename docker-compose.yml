@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  docky:
+    build: ./src/docky
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+  docky-centos:
+    build: ./src/docky_centos
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+
